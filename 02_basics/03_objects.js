@@ -22,7 +22,7 @@ const JsUser = {
 // console.log(JsUser[mySym]);        // by this way we can print symbols
 
 JsUser.email = "chotu@gmail.com"   // we can give new value & we can freeze it
-Object.freeze(JsUser)              // we can freeze the value of selected value so that we cannot change in the future
+// Object.freeze(JsUser)              // we can freeze the value of selected value so that we cannot change in the future
 JsUser.email = "sush@apple.com"
 // console.log(JsUser);
 
@@ -31,4 +31,12 @@ JsUser.greeting = function() {
     console.log("Hello JS user");    
 }
 
-console.log(JsUser.greeting);
+JsUser.greeting2 = function() {
+    console.log(`Hello JS user, ${
+        this.name
+    }`);    
+}
+
+console.log(JsUser.greeting());
+console.log(JsUser.greeting2());
+
