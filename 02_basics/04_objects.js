@@ -45,13 +45,45 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);    // this will show the all values
+// console.log(tinderUser);    // this will show the all values
 
-console.log(Object.keys(tinderUser));     // this will give the keywords of given value in array
-console.log(Object.values(tinderUser));   //  this will give the values of given keybwords in array
-console.log(Object.entries(tinderUser));  // this will convert the balue and keywords into array 
+// console.log(Object.keys(tinderUser));     // this will give the keywords of given value in array
+// console.log(Object.values(tinderUser));   //  this will give the values of given keybwords in array
+// console.log(Object.entries(tinderUser));  // this will convert the balue and keywords into array 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // this will check the keywords
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // this will check the keywords
  
 
-    
+//****************** Object de-structure and JSON API ******************    
+
+const course = {
+    courseName: "Js in hindi",
+    price: "999",
+    courseInstructor: "Sushant"
+}
+
+// course.courseInstructor          // its a way to pull the value 
+
+const {courseInstructor: instructor} = course   // same thing but different way
+
+// console.log(courseInstructor);
+console.log(instructor)
+
+const navbar = ({comapany}) => {   // this is the way to destructor any object with different name
+
+}
+
+navbar(comapany = "Sushant")     // this navbar is just for explaination of destructor any object
+
+
+// {
+//     "name": "Sushant",
+//     "courseName": "Js in Hindi",     // this is an example of Json file
+//     "Price": "free"
+// }
+
+[
+    {},
+    {},       //object in formate of array showing here line = #85 to #89
+    {}
+]
