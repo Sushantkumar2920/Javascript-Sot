@@ -37,4 +37,38 @@ function loginUserMessage(username = "Sush"){      // in a function we can assig
 }
 
 // console.log(loginUserMessage("Sushant"));
-console.log(loginUserMessage("Sushant"));       // in this we can overwrite the default value 
+// console.log(loginUserMessage("Sushant"));       // in this we can overwrite the default value 
+
+
+
+function calculateCartPrice(...num1){     //... this 3 dot will convert the coming value into array
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500));
+
+const user = {
+    username: "Sushant",   //in this 3 lines we declear a object name as user
+    price: 199 
+}
+
+function handleObject(anyobject){     // here we are putting that object in function 
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);  
+}
+
+// handleObject(user)
+handleObject({           
+    username: "Sushant",                    //here we cre calling the function
+    price: 399
+})
+
+
+const myArray = [200, 300, 400 ,600]    //here we created a array name as myArray
+
+function returnSeconValue(getArray){     //here we are putting that array in function
+    return getArray[1]                   // here we are pulling the particular value from the array
+}
+
+console.log(returnSeconValue(myArray));                 //way to print the value 
+console.log(returnSeconValue([200, 300, 400, 600]));    //different way to print the value
+
