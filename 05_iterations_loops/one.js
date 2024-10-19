@@ -13,7 +13,7 @@ for (let i = 0; i <= 10; i++) {
     for (let j = 0; j <= 10; j++) { 
         // console.log(`inner loop: ${j} and inner loop${i}`);
             //    console.log(i + '*' + j + '=' + i*j);
-               
+                
     }    
 }
 
