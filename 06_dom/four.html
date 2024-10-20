@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Language</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(LangName){
+        const li = document.createElement('li');
+        li.innerHTML = `${LangName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Javascript")
+    addLanguage("typescript")
+
+    function addOptiLanguage(LangName){
+        const li =  document.createElement('li');
+        li.appendChild(document.createTextNode(LangName))        
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"
+    const nnewli = document.createElement('li')
+    nnewli.textContent = "Mojo"
+    secondLang.replaceWith(nnewli)
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>Typescript</li>'
+
+    //remove 
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
