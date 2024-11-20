@@ -16,7 +16,7 @@ function User(email, password){
         get: function(){
             return this._password.toUpperCase()
         },
-        
+
         set: function(value){
             this._password = value
         }
@@ -24,6 +24,6 @@ function User(email, password){
 
 }
 
-const sush = new User("sush@gmail.com", "chai")
+const sush = new User("sush@gmail.com", "sush")
 
 console.log(sush.email);
